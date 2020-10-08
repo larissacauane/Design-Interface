@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Questao01.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Média Aritmética</title>
+    </head>
+    <body>
+        <div class="box">
+            <form onsubmit="return false">
+                <legend>Média Aritmética</legend>
+                <label for="num1" class="nota1">Primeira Nota</label>
+                <input type="number" name="num1" id="num1" required step="0.001" class="num1">
+
+                <label for="num2" class="nota2">Segunda Nota</label>
+                <input type="number" name="num2" id="num2" required step="0.001" class="num2">
+
+                <label for="num1" class="nota3">Terceira Nota</label>
+                <input type="number" name="num3" id="num3" required step="0.001" class="num3">
+
+                <input type="submit" value="Calcular" onclick="calcular()" class="btn_media">
+                <label for="resultado" class="media">Média</label>
+                <input type="number" name="resultado" id="resultado" step="0.001" class="resultado">
+            </form>
+        </div>
+
+        <script src="Questao01.js"></script>
+    </body>
+</html>

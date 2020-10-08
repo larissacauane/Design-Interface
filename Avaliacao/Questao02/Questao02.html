@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Questao02.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Novo Salário</title>
+    </head>
+    <body>
+        <div class="box">
+            <legend>Novo Salário</legend>
+            <form onsubmit="return false">
+                <label for="nome" class="nome_label">Nome</label>
+                <input type="text" name="nome" id="nome" class="nome_input">
+
+                <label for="salario" class="salario_label">Salário</label>
+                <input type="number" name="salario" id="salario" required step="0.001" class="salario_input">
+
+                <input type="submit" value="Calcular" onclick="calcular()" class="btn_calcular">
+
+                <label for="novoSalario" class="novoSlario_label">Salário com aumento</label>
+                <input type="number" name="novoSalario" id="novoSalario" step="0.001" class="novoSlario_input">
+            </form>
+        </div>
+
+        <script src="Questao02.js"></script>
+    </body>
+</html>

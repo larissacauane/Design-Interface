@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="Questao06.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Questão Coringa</title>
+    </head>
+    <body>
+        <div class="box">
+            <form onsubmit="return false">
+                <legend>Questão Coringa</legend>
+                <label for="num1" class="num1_label">Primeiro número</label>
+                <input type="number" name="num1" id="num1" required step="0.001" class="num1_input">
+
+                <label for="num2" class="num2_label">Segundo número</label>
+                <input type="number" name="num2" id="num2" required step="0.001" class="num2_input">
+
+                <label for="codigo" class="codigo_label">Código</label>
+                <input type="number" name="codigo" id="codigo" required class="codigo_input">
+                
+
+                <input type="submit" value="Calcular" onclick="calcular()" class="btn_calcular"> 
+
+                <label for="resultado" class="resultado_label">Resultado</label>
+                <input type="resultado" name="resultado" id="resultado" class="resultado_input">
+
+                <p id="situacao"></p>
+            </form>
+        </div>
+
+        <script src="Questao06.js"></script>
+    </body>
+</html>

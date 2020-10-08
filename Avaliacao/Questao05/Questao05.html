@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="Questao05.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Média para Aprovação</title>
+    </head>
+    <body>
+        <div class="box">
+            <form onsubmit="return false">
+                <legend>Média para Aprovação</legend>
+                <label for="nome" class="nome_label">Nome</label>
+                <input type="text" name="nome" id="nome" required class="nome_input">
+
+                <label for="num1" class="nota1_label">Primeira Nota</label><br>
+                <input type="number" name="num1" id="num1" required step="0.001" class="nota1_input">
+
+                <label for="num1" class="nota2_label">Segunda Nota</label><br>
+                <input type="number" name="num2" id="num2" required step="0.001" class="nota2_input">
+
+                <label for="num1" class="nota3_label">Terceira Nota</label><br>
+                <input type="number" name="num3" id="num3" required step="0.001" class="nota3_input">
+
+                <input type="submit" value="Calcular" onclick="calcular()" class="btn_calcular">
+
+                <label for="resultado" class="media_label">Média</label>
+                <input type="number" name="resultado" id="resultado" step="0.001" class="media_input">
+
+                <p id="situacao"></p>
+            </form>
+        </div>
+            
+        <script src="Questao05.js"></script>
+    </body>
+</html>

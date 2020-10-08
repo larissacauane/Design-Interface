@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="Questao03.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>O valor de C</title>
+    </head>
+    <body>
+        <div class="box">
+            <form onsubmit="return false">
+                <legend>C = ?</legend>
+                <label for="valorA" class="valorA_label">Valor de A</label>
+                <input type="number" name="valorA" id="valorA" required step="0.001" class="valorA_input">
+
+                <label for="valorB" class="valorB_label">Valor de B</label>
+                <input type="number" name="valorB" id="valorB" required step="0.001" class="valorB_input">
+
+                <input type="submit" value="Calcular" onclick="calcular()" class="btn_calcular">
+
+                <label for="valorC" class="valorC_label">O valor de C é</label>
+                <input type="number" name="valorC" id="valorC" step="0.001" class="valorC_input">
+            </form>
+        </div>
+        <script src="Questao03.js"></script>
+    </body>
+</html>

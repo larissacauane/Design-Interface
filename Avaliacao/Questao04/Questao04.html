@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Questao04.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Parcelas</title>
+    </head>
+    <body>
+        <div class="box">
+            <form onsubmit="return false">
+                <legend>Cálculo de Parcelas</legend>
+                
+                <label for="produto" class="produto_label">Valor do produto</label>
+                <input type="number" name="produto" id="produto" required step="0.001" class="produto_input">
+    
+                <select id="parcelas" class="parcelas_select">
+                    <option value="parcelar3">Parcelar em 3x</option>
+                    <option value="parcelar5">Parcelar em 5x</option>
+                </select>
+    
+                <input type="submit" value="Calcular" onclick="calcular()" class="btn_calcular">
+    
+                <label for="preco" class="preco_label">Preço Total</label>
+                <input type="number" name="preco" id="preco" step="0.001" class="preco_input">
+    
+                <label for="parcela" class="parcela_label">Valor das Parcelas</label>
+                <input type="number" name="parcela" id="parcela" step="0.001" class="parcela_input">
+            </form>
+        </div>
+
+        <script src="Questao04.js"></script>
+
+    </body>
+</html>
